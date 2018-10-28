@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="#232424"
+       android:textStyle="bold"
+       android:id="@+id/lv_complaintype"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_complaindesc"
+        android:textColor="#232424"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lv_complaintype"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/complain_name"
+        android:textColor="#232424"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/lv_complaindesc"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/complain_name"
+        android:id="@+id/complain_room"
+        android:textColor="#232424"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/complain_bed"
+        android:textColor="#232424"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/complain_room"
+        />
+</android.support.constraint.ConstraintLayout>
